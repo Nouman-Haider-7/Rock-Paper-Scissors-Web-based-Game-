@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background Video */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Header */
+.golden-heading {
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 20px #FFD700;
+  font-size: 3rem;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+/* Choices */
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.choice {
+  height: 160px;
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #FFD700;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.08);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.choice:hover {
+  transform: scale(1.2);
+  background-color: rgba(255, 215, 0, 0.25);
+  cursor: pointer;
+}
+
+.choice img {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+/* Score Board */
+.score-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-top: 60px;
+}
+
+.score {
+  background-color: rgba(255, 215, 0, 0.15);
+  padding: 15px 25px;
+  border: 2px solid #FFD700;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+}
+
+#user-score, #comp-score {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+/* Message */
+.msg-container {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+#msg {
+  padding: 10px 30px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  border: 2px solid #FFD700;
+  border-radius: 10px;
+  text-shadow: 0 0 5px #FFD700;
+  transition: 0.3s ease;
+}
+#msg:hover {
+  transform: scale(1.1);
+  background-color: rgba(255, 215, 0, 0.1);
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.footer-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 2px solid #FFD700;
+  padding: 15px 25px;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 0 10px #FFD700;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.footer-box:hover {
+  transform: scale(1.15);
+  background-color: rgba(255, 215, 0, 0.1);
+}
+
+.footer-box a {
+  display: block;
+  margin-top: 5px;
+  color: #00BFFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-box a:hover {
+  text-decoration: underline;
+  color: #FFD700;
+}
+
